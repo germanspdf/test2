@@ -1,0 +1,306 @@
+body{
+  font-family: 'Roboto';
+  overflow-x: hidden;
+}
+
+
+
+
+.navbar > a{
+  text-decoration: none;
+  color: white;
+}
+.navbar{
+  margin: -10px;
+  background-color: #F35D13;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  text-align: left;
+  align-items: center;
+}
+.nav-menu{
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  background: #323944;
+  font-family: 'Roboto';
+  color: white;
+  height: 40px;
+  align-items: center;
+}
+.nav-menu > ul{
+  display: flex;
+  list-style: none;
+  margin-left: 100px;
+}
+.nav-menu > ul>li >a{
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+}
+.navbar > form{
+  margin-right: 100px;
+}
+.col{
+  flex: 1;
+}
+
+.logo-inicio{
+  margin-top: -5px;
+  margin-left: 40px;
+  font-family: fantasy;
+  font-size: 28px;
+  width: 20%;
+}
+
+.nav-select{
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.btn-nav{
+  margin-left: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  color:white;
+  background-color: #F35D13;
+  border: 1px solid white;
+  opacity: 0.85;
+}
+
+.logo-img{
+  width: 36px;
+}
+.btn-nav:hover
+{
+  opacity:1;
+}
+
+
+.contenido{
+  display: flex;
+}
+.tabla-peliculas{
+  margin-left: 1%;
+}
+tr{
+
+}
+td > img{
+  height: 280px;
+}
+td{
+  border: 1px solid rgb(201, 201, 201);
+  text-align: center;
+}
+
+.footer{
+    display: flex;
+    background: #323944;
+    font-family: 'Roboto';
+    margin:0px -10px;
+    margin-top: 5px;
+  }
+
+.footer > ul{
+  list-style-type: none;
+  margin: 40px 7%;
+  color: white;
+
+}
+
+.footer-title{
+  font-size: 18px;
+  color: #F35D13;
+}
+
+.btn-ubicacion{
+
+  background-color: #f7d116;
+  font-family: 'Roboto';
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.mini-horario-sidebar{
+  height: 350px;
+  width: 550px;
+  display: flex;
+  margin-left: 20px;
+  overflow: scroll;
+  background: rgb(241, 241, 241);
+  flex-direction: column;
+}
+
+.titulo-mini-horario{
+  margin-left: 10px;
+  color: #F35D13;
+  border-bottom: 1px solid rgb(90, 107, 135);
+  font-size: 18px;
+
+}
+.sidebar-hr{
+  color: white;
+  background: white;
+}
+
+.horas-sidebar{
+  list-style: none;
+  margin-top: 0px;
+  margin-left: -10px;
+  display: flex;
+}
+
+.hora-sb{
+  margin-right: 12px;
+  color: white;
+  background: #F35D13;
+  padding: 2px 1px;
+  border-radius: 3px;
+  opacity: 0.7;
+}
+
+.mini-horario-header{
+  background: #F35D13;
+  color: white;
+}
+.tabla-peliculas > table{
+  width: 795px;
+}
+/*----------------- carusel -------------------*/
+.banner{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  position: relative;
+}
+.carusel > img{
+  vertical-align: middle;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .9}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .9}
+  to {opacity: 1}
+}
+/*----------------- tabs -------------------------------*/
+.tabs{
+  display: flex;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-left: 1%;
+}
+.tab{
+  border: none;
+  background-color:white;
+  margin-left: 1px;
+  padding: 8px;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+.tabs button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+}
+
+/* -----------------proximos estrenos ----------------*/
+.titulo-pe{
+
+}
+
+.contenido-pe{
+
+    margin-left: 150px;
+    color: #F35D13;
+}
+.contenido-pe > img{
+  height: 220px;
+  margin-right: 15px;
+}
+.contenido-pe > h4{
+  width: 700px;
+  border: 1px solid #C6C0C0;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.pelicula-pe{
+
+}
+
+.fila-peliculas{
+ height: 230px;
+ position: relative;
+ text-align: center;
+}
+
+.peliculas{
+
+    width:  150px;
+    height: 220px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
+}
+
+
+.contenedor-pelicula{
+  position: relative;
+  float: left;
+  width:  150px;
+  height: 220px;
+}
+.text-wrapper{
+  position: relative;
+  width: 100%;
+
+}
+
+/* ------------------ PReventa ----------------*/
+
+.preventas{
+
+}
+.preventas > img{
+  height: 220px;
+}
+
+/*-----------hover pelicula------------- */
+
+.hovered-movie{
+  border: 2px solid #F35D13;
+  filter: brightness(40%);
+}
+
+.text-block {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: white;
+}
+
+
+.h-text{
+
+}
